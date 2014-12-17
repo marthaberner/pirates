@@ -8,15 +8,9 @@
       <td><h4><%= pirate.name %></h4></td>
       <td><h4><%= pirate.poison %></h4></td>
     </tr>
-    <tr>
-      <td>
-        <%= link_to "Add a Pirate", new_pirate_path %>
-      </td>
-      <td>
-        &nbsp;
-      </td>
-
-    </tr>
     <% end %>
   </tbody>
 </table>
+<p>
+  <%= link_to "Add a Pirate", new_pirate_path %>
+</p>
