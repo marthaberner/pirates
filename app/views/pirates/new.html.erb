@@ -17,6 +17,13 @@
     <%= f.text_field :poison, class: "form-control" %>
   </div>
 </div>
+<div class="form-group">
+  <%= f.label :accessory, class: "col-xs-2" %>
+  <div class="col-xs-4">
+    <%= f.collection_select :accessory_name, Accessory.all, :name,
+    :name, { include_blank: "Arrr, pick an accessory!" }, class: "form-control" %>
+  </div>
+</div>
 
 <div class="form-group">
   <div class="col-md-10 col-md-offset-2">

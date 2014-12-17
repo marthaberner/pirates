@@ -1,12 +1,14 @@
-<table class="table">
+ <table class="table">
   <thead>
     <th>Name</th>
     <th>Poison of Choice</th>
+    <th>Accessory</th>
   </thead>
   <tbody>
     <% @pirates.each do |pirate| %><tr>
       <td><h4><%= pirate.name %></h4></td>
       <td><h4><%= pirate.poison %></h4></td>
+      <td><h4><%= pirate.accessory_name %></h4></td>
     </tr>
     <% end %>
   </tbody>

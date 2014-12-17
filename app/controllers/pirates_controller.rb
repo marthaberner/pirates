@@ -19,7 +19,7 @@ class PiratesController < ApplicationController
 
   private
   def pirate_params
-    params.require(:pirate).permit(:name, :poison)
+    params.require(:pirate).permit(:name, :poison, :accessory_name)
   end
 
 end
